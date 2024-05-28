@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlanAct</string>
+
+    <string name="title_home">Početna</string>
+    <string name="title_dashboard">Kalendar</string>
+    <string name="title_notifications">Notifikacije</string>
+    <string name="title_activity_main">Aktivnosti</string>
+    <!-- Preference Titles -->
+    <string name="notifications_header">Notifikacije</string>
+    <string name="language_header">Jezik</string>
+
+    <!-- Notification Preferences -->
+    <string name="toggle_title"></string>
+    <string name="period_title">Notifikacije narednih</string>
+
+
+    <string name="notifications_disabled">Isključeno</string>
+    <string name="notifications_enabled">Uključeno</string>
+
+    <!-- Language Preferences -->
+    <string name="current_language_title">Trenutni jezik</string>
+    <string name="default_language">English</string>
+    <string name="title_settings">Podešavanja</string>
+
+    <string name="activity_name">Naslov</string>
+    <string name="activity_location">Lokacija</string>
+    <string name="activity_time">Vrijeme</string>
+    <string name="activity_description">Opis</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="title_details">Detalji</string>
+    <string name="activity_image_location">Url slike</string>
+    <string name="custom_toolbar">Kreiraj aktivnost</string>
+
+    <string name="activity_date">Datum</string>
+    <string name="new_activity_category">Kategorija</string>
+    <string name="search_icon_description">Pretraga</string>
+    <string name="activity_type">Tip</string>
+    <string name="choose_an_option">Izaberi opciju</string>
+    <string name="title_photos">Fotofrafije</string>
+    <string name="activity_camera">Kamera</string>
+    <string name="confirm_deletion">Da li ste sigurni da želite izbrisati ovu aktivnost?</string>
+    <string name="positive_confirmation">Da</string>
+    <string name="cancel">Poništi</string>
+
+    <string-array name="category_options">
+        <item>Izaberi</item>
+        <item>Posao</item>
+        <item>Slobodno Vrijeme</item>
+        <item>Putovanje</item>
+        <item>Ostalo</item>
+    </string-array>
+
+
+    <string name="google_maps_key">AIzaSyD5GMVyzbS4wyTn8WOU5z_KKnuh_nbDrUU</string>
+    <string name="geocode_maps_api_key">65b7675c7cb4e054450479sdia6045c</string>
+    <string name="default_period">7 dana</string>
+    <string name="succesfull_deletion_message">Uspješno izbrisano</string>
+    <string name="succesfull_adding_message">Uspješno dodano</string>
+    <string name="error_adding_message">Greška pri dodavanju</string>
+    <string name="error_basic_message">Greška, pokušajte ponovo</string>
+    <string name="error_edit_message">Potrebna izmjena prije čuvanja</string>
+    <string name="error_adding_image">Greška pri dodavanju fotografije</string>
+    <string name="succesfull_saving_message">Uspješno sačuvano</string>
+    <string name="title_activity_details">Detalji aktivnosti</string>
+    <string name="title_new_activity">Dodaj aktivnost</string>
+    <string name="error_number_of_images_message">Maksimalno 10 fotografija dozvoljeno</string>
+    <string name="enter_image_message">Prekopirajte URL za preuzimanje fotografije</string>
+    <string name="download_button">Preuzmi</string>
+    <string name="error_downloading_image_message">Neusjpešno dodavanje fotografije</string>
+    <string name="cancel_button">Poništi</string>
+    <string name="datetime_format_error_message">Datum ili vrijeme nisu u korektnom formatu.</string>
+    <string name="category_selection_error_message">Kategorija nije izabrana</string>
+    <string name="period_message_first">manje od 1 sat</string>
+    <string name="period_message_second">između 1 sata i 1 dana</string>
+    <string name="period_message_third">između 1 dana i 7 dana</string>
+
+
+
+
+</resources>

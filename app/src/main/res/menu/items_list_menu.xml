@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <item-->
+<!--        android:id="@+id/action_search"-->
+<!--        android:title="Search"-->
+<!--        android:icon="@drawable/baseline_search_24"-->
+
+<!--        app:showAsAction="ifRoom"-->
+
+<!--        ></item>-->
+    <item
+        
+        android:id="@+id/search_field"
+        app:actionLayout="@layout/menu_item_search"
+        app:showAsAction="always"
+        android:title="Search for" />
+
+
+</menu>

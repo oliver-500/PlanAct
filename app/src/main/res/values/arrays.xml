@@ -1,0 +1,19 @@
+<resources>
+    <string-array name="language_entries">
+        <item>English</item>
+        <item>Srpski</item>
+        <item>Deutsch</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>en</item>
+        <item>rs</item>
+        <item>de</item>
+    </string-array>
+    <string-array name="noti_period_entries">
+        <item>1 hour</item>
+        <item>1 day</item>
+        <item>7 days</item>
+    </string-array>
+
+
+</resources>

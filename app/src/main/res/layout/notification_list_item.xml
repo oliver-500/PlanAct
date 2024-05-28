@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/act_layout"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/activity_name"
+            android:textStyle="bold"
+
+            ></TextView>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/cbIsDoneNotification"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.checkbox.MaterialCheckBox>
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvDueToPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+
+            android:text="in 3 days">
+
+        </TextView>
+
+
+</LinearLayout>

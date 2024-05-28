@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/LLItem"
+    android:padding="8dp"
+    android:layout_marginTop="5dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/act_layout">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="48dp"
+
+
+
+        >
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="5"
+            android:layout_height="48dp"
+            android:id="@+id/tvName"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/activity_name"
+
+            ></TextView>
+
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/cbIsDone"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.checkbox.MaterialCheckBox>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="time"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/tvDateTime"
+            android:textAlignment="center"
+            android:layout_weight="5"
+            ></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="location"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_weight="7"
+            android:padding="5dp"
+            android:id="@+id/tvLocation"
+            ></TextView>
+
+
+<!--        <com.google.android.material.button.MaterialButton-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:icon="@drawable/ic_right_arrow"-->
+<!--            android:id="@+id/ibDetails"-->
+
+<!--            style="@style/Widget.Material3.Button.IconButton"-->
+<!--            android:textAppearance="@style/Widget.Material3.Button.IconButton"-->
+
+
+
+<!--            ></com.google.android.material.button.MaterialButton>-->
+
+
+
+
+<!--        <ImageButton-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="48dp"-->
+
+<!--            android:id="@+id/ibDetails"-->
+
+<!--            android:src="@drawable/ic_right_arrow"-->
+
+<!--            android:background="@drawable/layout_bg"-->
+
+
+<!--            android:layout_margin="0dp"-->
+<!--            android:padding="0dp"-->
+
+<!--            android:layout_weight="2">-->
+
+<!--        </ImageButton>-->
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="5"-->
+<!--            android:padding="5dp"-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:text="nnnnnnnnnn nnnnnnnn n-->
+<!--            nnnnnnnnnnnnnnnnnnnnnnnnnnnnn-->
+<!--            n-->
+<!--            n-->
+<!--            n-->
+<!--            n nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn-->
+<!--            nnnnnnnn434nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnfdsnnnnnnn nn       43 n nn nnnn nnnnn nnnnnnnnnn nnnnnnnnnn nnnnnnnnnnnnn nnnnnnnndfsfds nnnnnnnnnnnnnnnnnnnnnnnn nnnnnnnnnnnnnnnnn fdsfdsfdsfdsnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"-->
+
+<!--            android:id="@+id/tvDescription"-->
+<!--            android:maxLines="2"-->
+
+<!--            ></TextView>-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="48dp"-->
+<!--            app:icon="@drawable/ic_right_arrow"-->
+<!--            android:rotation="90"-->
+<!--            android:id="@+id/ibMoreDescription"-->
+
+<!--            style="@style/Widget.Material3.Button.IconButton"-->
+<!--            android:textAppearance="@style/Widget.Material3.Button.IconButton"-->
+<!--            android:backgroundTint="?attr/colorSecondaryContainer"-->
+
+
+<!--            ></com.google.android.material.button.MaterialButton>-->
+
+<!--    </LinearLayout>-->
+
+
+
+
+
+
+    <!-- set query string of an search view -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="short"-->
+<!--        android:padding="10dp"-->
+<!--        android:id="@+id/tvDescription"-->
+<!--        ></TextView>-->
+</LinearLayout>

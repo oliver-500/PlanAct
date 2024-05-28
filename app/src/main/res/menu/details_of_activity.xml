@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item
+        android:id="@+id/action_add_activity"
+        android:title="Save"
+        app:showAsAction="ifRoom"
+
+        ></item>
+
+    <item
+        android:id="@+id/clear_fields"
+        app:showAsAction="never"
+        android:title="Clear"
+        ></item>
+
+    <item
+        android:id="@+id/delete_activity_option"
+        app:showAsAction="never"
+
+        android:title="Delete"
+        ></item>
+
+</menu>

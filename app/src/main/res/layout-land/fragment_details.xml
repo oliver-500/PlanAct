@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    >
+
+
+    <org.unibl.etf.mr.planact.ui.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/svAddActivity"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+       >
+
+
+        <LinearLayout
+
+            android:id="@+id/llAddActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:context=".ui.DetailsFragment">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="?attr/colorPrimaryContainer"
+                android:orientation="horizontal"
+                android:padding="@dimen/border_radius2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+
+                    android:text="@string/new_activity_category"></TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerActivityType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:prompt="@string/choose_an_option"
+                    android:textAlignment="viewEnd"
+                    android:tooltipText="@string/activity_type" />
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/activity_name">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:maxLines="50"
+
+                    android:minLines="1"></com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--    <TextView-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:textAlignment="center"-->
+            <!--        android:text="@string/activity_time" />-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="9"
+
+                    android:hint="@string/activity_date"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textNoSuggestions"
+
+
+                        >
+
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+
+
+                    android:id="@+id/btnDatePicker"
+                    style="@style/Widget.Material3.Button.IconButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:backgroundTint="?attr/colorSecondaryContainer"
+                    android:textAppearance="@style/Widget.Material3.Button.IconButton"
+
+
+                    app:icon="@drawable/ic_baseline_calendar_month_24"
+                    app:layout_constraintBottom_toBottomOf="@id/tilDate"
+                    app:layout_constraintEnd_toEndOf="@+id/tilDate"
+                    app:layout_constraintTop_toBottomOf="@id/tilDate"
+                    app:layout_constraintTop_toTopOf="@id/tilDate"></com.google.android.material.button.MaterialButton>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tiltTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="9"
+                    android:hint="@string/activity_time"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietTime"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+
+
+                        >
+
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+
+
+                    android:id="@+id/btnTimePicker"
+                    style="@style/Widget.Material3.Button.IconButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:backgroundTint="?attr/colorSecondaryContainer"
+                    android:textAppearance="@style/Widget.Material3.Button.IconButton"
+
+
+                    app:icon="@drawable/ic_baseline_watch_later_24"
+                    app:layout_constraintBottom_toBottomOf="@id/tiltTime"
+                    app:layout_constraintEnd_toEndOf="@+id/tiltTime"
+                    app:layout_constraintTop_toBottomOf="@id/tiltTime"
+
+                    app:layout_constraintTop_toTopOf="@id/tiltTime"></com.google.android.material.button.MaterialButton>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                android:hint="@string/activity_description"
+
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietDescription"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:maxLines="50"
+                    android:minLines="1"></com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/activity_location"
+
+                >
+
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/tietLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="25dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp"></com.google.android.material.textfield.MaterialAutoCompleteTextView>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:hint="@string/activity_location">-->
+
+
+            <!--                <com.google.android.material.textfield.TextInputEditText-->
+            <!--                    android:id="@+id/tietLocation"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:minLines="1"-->
+            <!--                    android:maxLines="50"-->
+            <!--                    android:inputType="textMultiLine"-->
+            <!--                    ></com.google.android.material.textfield.TextInputEditText>-->
+
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+            <LinearLayout
+                android:id="@+id/photosLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/black_rounded_allsides_border"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/title_photos">
+
+                </TextView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+
+                        android:id="@+id/photosListLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+
+                        android:id="@+id/btnAddPhotos"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="?attr/colorSecondaryContainer"
+                        android:textAppearance="@style/Widget.Material3.Button.IconButton"
+                        android:tooltipText="Add photos"
+
+                        app:icon="@drawable/ic_baseline_add_24"></com.google.android.material.button.MaterialButton>
+
+                    <com.google.android.material.button.MaterialButton
+
+                        android:id="@+id/btnTakePhoto"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:backgroundTint="?attr/colorSecondaryContainer"
+                        android:textAppearance="@style/Widget.Material3.Button.IconButton"
+                        android:tooltipText="Take photo"
+
+                        app:icon="@drawable/baseline_photo_camera_24"></com.google.android.material.button.MaterialButton>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDownloadPhoto"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+
+                        android:backgroundTint="?attr/colorSecondaryContainer"
+                        android:textAppearance="@style/Widget.Material3.Button.IconButton"
+                        android:tooltipText="Download photo"
+
+                        app:icon="@drawable/baseline_download_24"></com.google.android.material.button.MaterialButton>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/mapsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </org.unibl.etf.mr.planact.ui.CustomScrollView>
+
+
+    <include layout="@layout/loading_layout"></include>
+
+
+</FrameLayout>
+
+
+
